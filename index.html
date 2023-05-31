@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js
+    "></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="status-control">
+        <div id="change-player" >
+            <h2>Escolha o ícone do player 1</h2>
+            <div>
+                <button data-escolha="X">X</button>
+                <button data-escolha="O">O</button>
+            </div>
+        </div>
+        <div class="game-started">
+            <h2 class="displayOff" id="game-start">O JOGO COMEÇOU !</h2>
+            <h2 id="player-chance" class="displayOff">Vez do player 1</h2>
+            <button id="restartGame" class="displayOff">Jogar novamente</button>
+        </div>
+    </div>
+    <main>
+        <div id="placar" class="placarOff">
+            <h2>Placar</h2>
+            <div>
+                <p data-count="1">Player 1: </p>
+                <p data-count="2">Player 2: </p>
+            </div>
+        </div>
+        <div id="game-control">
+            <div id="div1" data-position="1"></div>
+            <div id="div2" data-position="2"></div>
+            <div id="div3" data-position="3"></div>
+            <div id="div4" data-position="4"></div>
+            <div id="div5" data-position="5"></div>
+            <div id="div6" data-position="6"></div>
+            <div id="div7" data-position="7"></div>
+            <div id="div8" data-position="8"></div>
+            <div id="div9" data-position="9"></div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

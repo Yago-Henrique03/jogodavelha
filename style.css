@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(15, 15, 15, 0.945);
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+
+#status-control {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+main {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+main h2{
+    color: white;
+}
+
+#game-control{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    width: 100%;
+    max-width: 50%;
+    height: 100%;
+    max-height: 50%;
+}
+
+
+#game-control div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-size: 50px;
+    border-radius: 15px;
+}
+
+#change-player {
+    background-color: rgb(31, 31, 31);
+    max-width: 340px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid blueviolet;
+    /* margin-left: 100px; */
+    flex: 1;
+}
+
+#change-player h2{
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+
+#change-player button{
+    border-radius: 4px;
+    border: none;
+    background-color: blueviolet;
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#change-player button:hover{
+    background-color: rgb(111, 0, 126);
+    transition: 0.7s;
+}
+
+#restartGame {
+    height: 40px;
+    background-color: blueviolet;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+#restartGame:hover{
+    background-color: rgb(111, 0, 126);
+    transition: 0.7s;
+}
+
+#placar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#placar div {
+    margin-top: 5px;
+    display: flex;
+    gap: 40px;
+}
+
+.game-started{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayOff{
+    display: none !important;
+}
+
+.placarOff{
+    opacity: 0;
+}
+
+.winnerShow{
+    background-color: blueviolet !important;
+    color: white !important;
+}
